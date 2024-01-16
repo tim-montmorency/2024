@@ -1,0 +1,262 @@
+/* STRUCTURE GÉNÉRALE */
+
+:root {
+    --font-regular: "Quicksand", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+    --white-dark: #e0e0e0;
+    --black-off: #111;
+    --black-dark: #0e0e0e;
+    --red-light: #ff3363;
+    --red: #ff003a;
+    --color: var(--black-off);
+    --background: #fff;
+    --background-off: #f4f4f4;
+    --highlight: var(--red-light);
+    --spacer: 15px;
+    --section-spacer: 40px;
+    --width: 375px;
+    --grid-color: red;
+    --grid-size: 100px;
+    --grid-blur : 0px;
+}
+
+html{
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black-off);
+    font-family: var(--font-regular);
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.banniere-bg{
+    background-image: url(medias/TIM_banniere_coul_1000px.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    min-height: 201px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grille-bg{
+    background-image: url(medias/arriere_plan_full.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    min-height: 201px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header img{ display: none}
+
+
+/* STRUCTURE GÉNÉRALE */
+body{
+    margin: 0;
+}
+header {
+    padding: 20px 20px;
+    background: transparent;
+}
+main, footer{
+    background-color: rgba(0,0,0,0.5);
+}
+section, footer {
+    padding: 10px 40px 20px 40px;
+}
+
+/* CONTENU ENTÊTE (HEADER) */
+header .inner{
+    padding: 0;
+}
+
+a#logo{
+    background-position: 0 0;
+}
+
+.logo_container{
+    font-size: 38px;
+}
+
+.spotlight_m{
+    top: -100px;
+    right: -400px;
+}
+
+@media screen and (max-width: 1499px) {
+
+    .spotlight{
+        display: none;
+    }
+    
+}
+
+/* PRÉSENTATION DU PROJET */
+section.hero{
+    padding: 0;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 100%;
+}
+
+main h1{
+    padding: 60px 0 0 0;
+    font-size: 40px;
+    text-align: left;
+}
+@media screen and (max-width: 992px) {
+    h1{
+        display: none;
+    }  
+}  
+
+.btns_evenement h3{
+    font-family: var(--font-heading);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.btns_evenement h3 span{
+    font-size: 80%;
+}
+
+.btns_evenement .f-interactif,
+.btns_evenement .f-diffusion{
+    margin-bottom: 40px;
+}
+
+.btns_evenement .f-interactif h3{
+    padding-left: 50px;
+    background: url("medias/fleche_interactif_blanche.svg") no-repeat 0 0;
+}
+
+.btns_evenement .f-diffusion h3{
+    padding-left: 50px;
+    background: url("medias/fleche_diffusion_blanche.svg") no-repeat 6px 7px;
+}
+
+.presentation_projet p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px; 
+}
+
+.presentation_projet .col{
+    margin-top: 60px;
+}
+
+.presentation_projet a:link, a:visited {
+    color: white;
+}
+.presentation_projet a:hover, a:active {
+    color:white;
+}
+
+.f-interactif .btn{
+    background: url(medias/fleche_interactif_verte.svg) no-repeat 95% 5px;
+}
+.f-diffusion .btn{
+    background: url(medias/fleche_diffusion_verte.svg) no-repeat 98% 10px;
+}
+
+ul.photos_finissants, .photos_finissants li{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.photos_finissants{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+ul.photos_finissants li{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.photos_finissants img {
+    width: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.galerie_projet{
+    margin-top: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.gallery a{
+    display: block;
+    margin: 3px;
+    width: 180px;
+    height: 135px;
+    overflow: hidden;
+}
+
+
+.galerie_projet img {
+    width: 240px;
+}
+
+/* JOURNAL DE CRÉATION */
+.journal_creation {
+    margin: 0;
+    max-width: 880px;
+}
+.journal_creation img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.journal_creation a img{
+    width: 200px;
+    max-width: 100%;
+}
+.journal_creation h2 {
+    text-align: center;
+}
+.semaine_x {
+    text-align: left;
+    border-top: 1px solid #666666;
+    padding-bottom: 70px;
+}
+
+.journal_creation a{
+    color: white;
+    text-decoration: underline;
+}
+
+/* PIED DE PAGE */
+footer {
+
+  
+}
+
+

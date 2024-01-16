@@ -1,0 +1,264 @@
+/* STRUCTURE GÉNÉRALE */
+:root {
+    --font-regular: "Quicksand", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+    --white-dark: #e0e0e0;
+    --black-off: #111;
+    --black-dark: #0e0e0e;
+    --red-light: #ff3363;
+    --red: #ff003a;
+    --color: var(--black-off);
+    --background: #fff;
+    --background-off: #f4f4f4;
+    --highlight: var(--red-light);
+    --spacer: 15px;
+    --section-spacer: 40px;
+    --width: 375px;
+    --grid-color: red;
+    --grid-size: 100px;
+    --grid-blur : 0px;
+}
+
+html{
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black-off);
+    font-family: var(--font-regular);
+    font-weight: 300;
+    min-height: 100vh;
+    position: relative;
+}
+
+.grille-bg{
+    background-image: url(medias/arriere_plan_full.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    min-height: 201px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+}
+
+header, main, footer {
+    color: white;
+}
+
+main{
+    padding-bottom: 120px;
+}
+
+section {
+    padding: 10px 40px 20px 40px;
+}
+
+header {
+    font-family: var(--font-heading);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.home header{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+}
+
+body a,
+header a{
+    color: white;
+}
+
+/* CONTENU ENTÊTE (HEADER) */
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin: 0 0 13px 0;
+    text-align: center;
+    font-family: var(--font-heading);
+    margin-bottom: 30px;
+}
+
+h1 a, header a {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    
+}
+
+h1 .nom-evenement{
+    font-weight: 800;
+    font-size: 11vw;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    h1 .nom-evenement{
+        font-size: 80px;
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) {
+    .site-logo .logo-tim {
+        height: 80px;
+    }
+}
+
+.site-logo .logo-tim {
+    height: 40px;
+}
+
+.logo-tim {
+    display: block;
+    fill: var(--highlight);
+    transition: fill 1s;
+    display: inline-block;
+    width: 250px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: white;
+    font-weight: 400;
+}
+
+
+/* SECTION PRÉSENTATION DES PROJETS */
+.projet{
+    position: relative;
+    display: block;
+    border: 2px solid var(--red);
+    transition: all 0.5s ease;
+}
+a.projet{
+    color: white;
+    text-decoration: none;
+}
+a.projet:hover{
+    color: white;
+    border-color: white;
+}
+a.projet img{
+    filter: grayscale(60%);
+}
+a.projet img:hover{
+    filter: grayscale(0%);
+}
+.desc_projet{
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--red);
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+a.projet:hover .desc_projet{
+    background-color: white;
+}
+
+.projet h2{
+    padding: 10px 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+a.projet:hover h2{
+    color: var(--red);
+}
+
+
+/* PIED DE PAGE (FOOTER) */
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box;
+    color:  var(--highlight);
+    border-top: 1px solid var(--highlight);
+    margin-top: 100px;
+    min-height: 100px;
+    background: --black-dark;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color:  var(--highlight);
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* BOUTONS */
+a.btn {
+    display: block;
+    padding: 18px 20px 15px 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #213337;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 992px) {
+    a.btn {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    a.btn {
+        max-width: 100%;
+    }
+}
+
+a.btn,
+a.btn:link,
+a.btn:active,
+a.btn:hover,
+a.btn:visited,
+.presentation_projet a.btn,
+.presentation_projet a.btn:link,
+.presentation_projet a.btn:active,
+.presentation_projet a.btn:hover,
+.presentation_projet a.btn:visited {
+    background-color: #ffffff;
+    color: #213337;
+    transition: all 200ms;
+    max-width: 600px
+}
+
+a.btn:hover,
+.presentation_projet a.btn:hover {
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+a.btn.btn-disabled,
+.presentation_projet a.btn.btn-disabled {
+    opacity: 0.2;
+    pointer-events: none;
+    cursor: default;
+}
+
+a.btn.btn-disabled:hover,
+.presentation_projet a.btn.btn-disabled:hover {
+    background-color: #ffffff;
+    color: #213337;
+}
