@@ -3,10 +3,13 @@
 Recueil des projets du cours synthèse en technique d'intégration expérience interactive finissants TIM 2024
 
 ## cloner le repos
+
 ```
 git clone 
-``
+```
+
 ## init le repos
+
 ```
 git submodule init
 git submodule update
