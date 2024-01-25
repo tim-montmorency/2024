@@ -1,3 +1,18 @@
 [submodule "projets/66B-modele_de_projet"]
 	path = projets/66B-modele_de_projet
 	url = https://github.com/tim-montmorency/66B-modele_de_projet.git
+[submodule "projets/Celestia"]
+	path = projets/Celestia
+	url = https://github.com/TIM-Celestia/Celestia
+[submodule "projets/TableInteractive"]
+	path = projets/TableInteractive
+	url = https://github.com/Les-gars-d-la-table/TableInteractive
+[submodule "projets/Sonalux"]
+	path = projets/Sonalux
+	url = https://github.com/Sonalux2024/Sonalux
+[submodule "projets/Kigo"]
+	path = projets/Kigo
+	url = https://github.com/espace-interactif/Kigo
+[submodule "projets/Effet-Papillon"]
+	path = projets/Effet-Papillon
+	url = https://github.com/EffetPapillon2024/Effet-Papillon
