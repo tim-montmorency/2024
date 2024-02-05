@@ -11,3 +11,9 @@
 	path = projets/Effet-Papillon
 	url = https://github.com/Iteration6/Effet-Papillon
 
+[submodule "projets/Canevas-Cosmique"]
+	path = projets/Canevas-Cosmique
+	url = https://github.com/Les-gars-d-la-table/Canevas-Cosmique
+[submodule "projets/Rhizomatique"]
+	path = projets/Rhizomatique
+	url = https://github.com/TIM-Celestia/Rhizomatique
