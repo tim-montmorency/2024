@@ -1,12 +1,6 @@
 [submodule "projets/66B-modele_de_projet"]
 	path = projets/66B-modele_de_projet
 	url = https://github.com/tim-montmorency/66B-modele_de_projet.git
-[submodule "projets/Rhizomatique"]
-	path = projets/Rhizomatique
-	url = https://github.com/TIM-Celestia/Rhizomatique
-[submodule "projets/Canevas-Cosmique"]
-	path = projets/Canevas-Cosmique
-	url = https://github.com/Les-gars-d-la-table/Canevas-Cosmique
 [submodule "projets/Sonalux"]
 	path = projets/Sonalux
 	url = https://github.com/Sonalux2024/Sonalux
