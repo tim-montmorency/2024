@@ -63,7 +63,7 @@ header {
     font-family: var(--font-heading);
     text-align: center;
     color: white;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     position: relative; 
@@ -123,7 +123,12 @@ h1 .nom-evenement{
     fill: var(--highlight);
     transition: fill 1s;
     display: inline-block;
-    width: 250px;
+    width: 50%;
+}
+
+.header-img {
+    border: 2px solid var(--red);
+    width: 100%;
 }
 
 h1, h2, h3 {
