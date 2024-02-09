@@ -74,10 +74,30 @@ header {
     padding-bottom: 2vw;
 }
 
-body a,
-header a{
+body a {
     color: white;
 }
+
+/* unvisited link */
+header a:link {
+    color: #ff003a;
+  }
+  
+  /* visited link */
+  header  a:visited {
+    color: #ff003a;
+  }
+  
+  /* mouse over link */
+  header a:hover {
+    color: #ff003a;
+  }
+  
+  /* selected link */
+  header a:active {
+    color: #ff003a;
+  }
+  
 
 /* CONTENU ENTÊTE (HEADER) */
 h1 {
