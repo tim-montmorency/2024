@@ -147,9 +147,10 @@ h1 .nom-evenement{
 }
 
 .header-img {
-    position:absolute;
+    
     border: 2px solid var(--red);
     width: 100%;
+
 }
 
 .header-vid {
