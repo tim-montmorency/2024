@@ -55,12 +55,13 @@
 						</div>
 						<br>
 						<br>
-				<div style="position: relative;">
+				<div class="header-div" >
+					<img id="banniere-img" src="medias/banniere.png" alt="Bannière de l'exposition" class="header-img">
 					<video id="banniere-video" src="" preload="metadata" class="header-vid"  muted="" playsinline="" loop="">
 					</video>
-					<div style="position:absolute;   top: 0px;left: 0px;">
-						<img id="banniere-img" src="medias/banniere.png" alt="Bannière de l'exposition" class="header-img">
-					</div>
+					
+						
+					
 					
 				</div>
 				
@@ -156,6 +157,7 @@
 				// Hide the video initially
 				//video.style.display = 'none';
 				//video.autoplay = true;
+				video.style.visibility = 'hidden';
 			
 				// Add an event listener to the video to check when it's loaded
 				video.addEventListener('loadeddata', (event) => {
@@ -163,11 +165,12 @@
 					// Once the video is loaded, hide the image and show the video
 					//image.style.display = 'none';
 					image.style.visibility = 'hidden';
-					//video.style.display = 'block';
+					video.style.visibility = 'visible';
+					video.style.display = 'inline';
 					// Optionally, you can add code here to autoplay the video
 					video.play();
 				});
-				video.src = "medias/banniere.mp4";
+				//video.src = "medias/banniere.mp4";
 				video.play();
 			//});
 			  

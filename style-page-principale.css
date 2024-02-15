@@ -146,16 +146,26 @@ h1 .nom-evenement{
     width: 50%;
 }
 
-.header-img {
-    
+.header-div {
     border: 2px solid var(--red);
     width: 100%;
+    position: relative;
+}
 
+.header-img {
+    
+    
+    width: 100%;
+    
 }
 
 .header-vid {
-    border: 2px solid var(--red);
+    
     width: 100%;
+    position:absolute;   
+    top: 0px;
+    left: 0px;
+    display: none;
     
 }
 
