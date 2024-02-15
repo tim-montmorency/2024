@@ -55,8 +55,10 @@
 						</div>
 						<br>
 						<br>
-				<!-- <img src="medias/banniere.png" alt="Bannière de l'exposition" class="header-img">	 -->
-				<video src="medias/banniere.mp4" class="header-img" autoplay="" muted="" playsinline="" loop=""></video>
+				
+				<video id="banniere-video" src="" preload="metadata" class="header-vid"  muted="" playsinline="" loop="">
+				</video>
+				<img id="banniere-img" src="medias/banniere.png" alt="Bannière de l'exposition" class="header-img">
 				<br>
 				<br>
 				<p style="margin:0;">
@@ -135,6 +137,36 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+
+		<script>
+			// Wait for the page to load
+			//document.addEventListener('DOMContentLoaded', function() {
+			  // Get references to the image and video elements
+				var image = document.getElementById('banniere-img');
+				var video = document.getElementById('banniere-video');
+
+				//console.log(image);
+				//console.log(video);
+			
+				// Hide the video initially
+				// video.style.display = 'none';
+				//video.autoplay = true;
+			
+				// Add an event listener to the video to check when it's loaded
+				video.addEventListener('loadeddata', (event) => {
+					console.log("video loaded");
+					// Once the video is loaded, hide the image and show the video
+					//image.style.display = 'none';
+					image.style.visibility = 'hidden';
+					//video.style.display = 'block';
+					// Optionally, you can add code here to autoplay the video
+					video.play();
+				});
+				video.src = "medias/banniere.mp4";
+				video.play();
+			//});
+			  
+		  </script>
 </body>
 
 </html>
